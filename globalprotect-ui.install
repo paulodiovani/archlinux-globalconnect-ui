@@ -1,0 +1,40 @@
+GPDIR=/opt/paloaltonetworks/globalprotect
+
+post_install() {
+  # enable and start gpd service
+  echo "Starting gpd service..."
+  systemctl enable gpd
+  systemctl start gpd
+  sleep 3
+  # GP autostart
+  # cp $GPDIR/PanMSInit.sh /etc/profile.d/
+  # if [ -f $GPDIR/PanGPUI.desktop ]; then
+  #   cp $GPDIR/PanGPUI.desktop /etc/xdg/autostart/
+  # fi
+}
+
+pre_remove() {
+  # Stop gp service when i's running
+  echo "Stopping gpd service and all related process..."
+  if [ "$(pidof PanGPS)" ]; then
+    systemctl stop gpd
+    systemctl disable gpd
+    sleep 5
+  fi
+
+  if [ "$(pidof PanGPA)" ]; then
+    kill -9 `pidof PanGPA`
+  fi
+
+  if [ "$(pidof globalprotect)" ]; then
+    kill -9 `pidof globalprotect`
+  fi
+
+  if [ "$(pidof PanGPUI)" ]; then
+    kill `pidof PanGPUI`
+  fi
+}
+
+pre_upgrade() {
+  pre_remove
+}

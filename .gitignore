@@ -1,0 +1,12 @@
+PanGPLinux*.tgz
+GlobalProtect*
+
+manifest
+relinfo
+
+pkg
+src
+
+*.tar.gz
+*.tgz
+*.tar.xz
