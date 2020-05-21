@@ -4,6 +4,17 @@ Arch Linux package
 
 ## Setup
 
+### Install from a release
+
+Grab the latest [Release](https://github.secureserver.net/v-pgoncalves/archlinux-globalconnect-ui/releases)
+and install with.
+
+```
+sudo pacman -U globalprotect-ui-X.X.X.X_X-X-any.pkg.tar.xz
+```
+
+### Build on your own
+
 1. Obtain the app package from your IT administrator or
   check at [Palo Alto website](https://docs.paloaltonetworks.com/globalprotect/4-1/globalprotect-app-user-guide/globalprotect-app-for-linux.html)
 
