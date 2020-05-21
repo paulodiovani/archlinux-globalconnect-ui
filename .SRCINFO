@@ -8,7 +8,13 @@ pkgbase = globalprotect-ui
 	depends = qt5-webkit>=5.9.1
 	options = !emptydirs
 	source = GlobalProtect_UI_tar-5.1.1.0-17.tgz
+	source = gpa.service
+	source = globalprotect.desktop
+	source = globalprotect.png
 	sha256sums = 60ae137b5f12150c9c5ba6f2efd0fcb1d4bfa067c68261e156ff19cc586487d0
+	sha256sums = 3556c8c5df9c086cdfdece0fa96020828d587957bcb800b396d77891d4f72a99
+	sha256sums = 7c26591a646b647e540c562c58d8717ed76a6b25c0ae78eced8c8986f9f7fb90
+	sha256sums = 79cc793192519579ea7628cc6ab49207c72040d4e5dc25b37e200b604f87a771
 
 pkgname = globalprotect-ui
 

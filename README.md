@@ -11,4 +11,24 @@ Arch Linux package
 
   There must be a `GlobalProtect_UI_tar-X.X.X_X.tgz` file.
 
-1. Run `makepkg -sri`
+1. Install
+
+  ```
+  makepkg -sri
+  ```
+
+  - Note: This will also start the `gpd` service
+
+1. Start the GPA user service
+
+  ```
+  systenctl --user enable gpa
+  systenctl --user start gpa
+  ```
+
+1. Start the **Global Protect** app,
+  or add to your autostart.
+
+  ```
+  cp /opt/paloaltonetworks/globalprotect/PanGPUI.desktop
+  ```

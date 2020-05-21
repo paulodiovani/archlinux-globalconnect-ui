@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Global Protect
+Type=Application
+Exec=/opt/paloaltonetworks/globalprotect/PanGPUI
+Icon=/opt/paloaltonetworks/globalprotect/globalprotect.png
+Terminal=false
