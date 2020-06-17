@@ -6,12 +6,29 @@ Arch Linux package
 
 ### Install from a release
 
-Grab the latest [Release](https://github.secureserver.net/v-pgoncalves/archlinux-globalconnect-ui/releases)
+1. Grab the latest [Release](https://github.secureserver.net/v-pgoncalves/archlinux-globalconnect-ui/releases)
 and install with.
 
-```
-sudo pacman -U globalprotect-ui-X.X.X.X_X-X-any.pkg.tar.xz
-```
+    ```
+    sudo pacman -U globalprotect-ui-X.X.X.X_X-X-any.pkg.tar.xz
+    ```
+
+    - Note: This will also start the `gpd` service
+
+2. Start the GPA user service
+
+    ```
+    systenctl --user enable gpa
+    systenctl --user start gpa
+    ```
+
+3. Start the **Global Protect** app,
+
+    or add to your autostart.
+
+    ```
+    cp /opt/paloaltonetworks/globalprotect/PanGPUI.desktop ~/.config/autostart
+    ```
 
 ### Build on your own
 
@@ -30,17 +47,4 @@ sudo pacman -U globalprotect-ui-X.X.X.X_X-X-any.pkg.tar.xz
 
     - Note: This will also start the `gpd` service
 
-4. Start the GPA user service
-
-    ```
-    systenctl --user enable gpa
-    systenctl --user start gpa
-    ```
-
-5. Start the **Global Protect** app,
-
-    or add to your autostart.
-
-    ```
-    cp /opt/paloaltonetworks/globalprotect/PanGPUI.desktop ~/.config/autostart
-    ```
+4. Follow steps **2 and followying** from [Install from a release](#install-from-a-release)
