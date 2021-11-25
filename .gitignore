@@ -10,3 +10,4 @@ src
 *.tar.gz
 *.tgz
 *.tar.xz
+*.tar.zst

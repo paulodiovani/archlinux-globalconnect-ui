@@ -1,7 +1,7 @@
 # Maintainer: Paulo Diovani <paulo@diovani.com>
 
 pkgname=globalprotect-ui
-pkgver=5.1.1.0_17
+pkgver=5.2.5.0_46
 pkgrel=1
 pkgdesc="Global Protect VPN Linux Client (GUI Version)"
 arch=('any')
@@ -10,8 +10,6 @@ url='http://paloaltonetworks.com'
 depends=('qt5-webkit>=5.9.1')
 options=(!emptydirs)
 install="${pkgname}.install"
-# source=("GlobalProtect_tar-${pkgver//_/-}.tgz")
-# sha256sums=('48df5b667ed2bcd7b5367b5feac73f898db73443933380c5d31d23148bdc752c')
 source=(
   "GlobalProtect_UI_tar-${pkgver//_/-}.tgz"
   'gpa.service'
@@ -19,7 +17,7 @@ source=(
   'globalprotect.png'
 )
 sha256sums=(
-  '60ae137b5f12150c9c5ba6f2efd0fcb1d4bfa067c68261e156ff19cc586487d0'
+  '17a8a19b8e699bb75655d3216ff5182c17aaf74838f3791c3bae526bf5e1fb1c'
   '3556c8c5df9c086cdfdece0fa96020828d587957bcb800b396d77891d4f72a99'
   '7c26591a646b647e540c562c58d8717ed76a6b25c0ae78eced8c8986f9f7fb90'
   '79cc793192519579ea7628cc6ab49207c72040d4e5dc25b37e200b604f87a771'
