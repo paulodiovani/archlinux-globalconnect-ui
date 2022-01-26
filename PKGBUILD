@@ -1,7 +1,7 @@
 # Maintainer: Paulo Diovani <paulo@diovani.com>
 
 pkgname=globalprotect-ui
-pkgver=5.2.5.0_46
+pkgver=5.3.1.0_36
 pkgrel=1
 pkgdesc="Global Protect VPN Linux Client (GUI Version)"
 arch=('any')
@@ -17,7 +17,7 @@ source=(
   'globalprotect.png'
 )
 sha256sums=(
-  '17a8a19b8e699bb75655d3216ff5182c17aaf74838f3791c3bae526bf5e1fb1c'
+  '387e5dc03eb7eb2ba9de4a8e3421ef2a6cf00dbd205e4b01ea0741a1311e9f1e'
   '3556c8c5df9c086cdfdece0fa96020828d587957bcb800b396d77891d4f72a99'
   '7c26591a646b647e540c562c58d8717ed76a6b25c0ae78eced8c8986f9f7fb90'
   '79cc793192519579ea7628cc6ab49207c72040d4e5dc25b37e200b604f87a771'
