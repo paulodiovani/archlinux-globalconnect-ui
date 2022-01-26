@@ -2,7 +2,7 @@
 
 pkgname=globalprotect-ui
 pkgver=5.3.1.0_36
-pkgrel=1
+pkgrel=2
 pkgdesc="Global Protect VPN Linux Client (GUI Version)"
 arch=('any')
 url='http://paloaltonetworks.com'
@@ -67,9 +67,14 @@ package() {
   # Ensure symbol link for GPI
   ln -s ${GPDIR//$pkgdir/}/globalprotect $BINDIR/globalprotect
 
-  # Add desktop entry
+  # Add desktop entry for app menu
   cp -f globalprotect.png $GPDIR/
   cp -f globalprotect.desktop $APPDIR/
+
+  # add desktop entry for mimetype
+  if [ -f gp.desktop ]; then
+    cp -f gp.desktop $APPDIR/
+  fi
 }
 
 # vim:set ts=2 sw=2 et:
