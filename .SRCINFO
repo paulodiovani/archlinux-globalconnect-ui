@@ -1,13 +1,13 @@
 pkgbase = globalprotect-ui
 	pkgdesc = Global Protect VPN Linux Client (GUI Version)
-	pkgver = 5.3.1.0_36
-	pkgrel = 3
+	pkgver = 6.0.0.1_44
+	pkgrel = 1
 	url = http://paloaltonetworks.com
 	install = globalprotect-ui.install
 	arch = any
 	depends = qt5-webkit>=5.9.1
 	options = !emptydirs
-	source = GlobalProtect_UI_tar-5.3.1.0-36.tgz
-	sha256sums = 387e5dc03eb7eb2ba9de4a8e3421ef2a6cf00dbd205e4b01ea0741a1311e9f1e
+	source = GlobalProtect_UI_tar-6.0.0.1-44.tgz
+	sha256sums = 833640b978861fd4333a2c86b029b35c67983f791e52d9b7df2af5c50638839a
 
 pkgname = globalprotect-ui
