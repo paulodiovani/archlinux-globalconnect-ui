@@ -4,7 +4,7 @@ Arch Linux package
 
 ## Setup
 
-### Install from a release
+### Install from a release (not public available)
 
 1. Grab the latest [Release](https://github.secureserver.net/v-pgoncalves/archlinux-globalconnect-ui/releases)
 and install with.
