@@ -2,12 +2,13 @@
 
 pkgname=globalprotect-ui
 pkgver=6.0.0.1_44
-pkgrel=1
+pkgrel=2
 pkgdesc="Global Protect VPN Linux Client (GUI Version)"
 arch=('any')
 url='http://paloaltonetworks.com'
 #license=('')
 depends=('qt5-webkit>=5.9.1')
+optdepends=('icu71: International Components for Unicode library (version 71)')
 options=(!emptydirs)
 install="${pkgname}.install"
 source=(

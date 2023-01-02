@@ -48,3 +48,10 @@ and install with.
     - Note: This will also start the `gpd` service
 
 4. Follow steps **2 and followying** from [Install from a release](#install-from-a-release)
+
+
+### Throubleshooting
+
+>  /opt/paloaltonetworks/globalprotect/PanGPUI: error while loading shared libraries: libicuuc.so.71: cannot open shared object file: No such file or directory
+
+Install [icu71](https://aur.archlinux.org/packages/icu71) package.
